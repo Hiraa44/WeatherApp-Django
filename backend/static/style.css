@@ -1,0 +1,72 @@
+
+body {
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+    font-family: Arial, sans-serif;
+    color: white;
+}form {
+  max-width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #7ac5e3;
+  border: 1px solid #40931a;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Submit Button */
+button,
+input[type="text"] {
+  background-color: #dfd8d8;
+  color: rgb(16, 4, 4);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #1e40af;
+  
+}
+.icon {
+        padding: 30px;
+        background-color: dodgerblue;
+        color: rgb(194, 189, 189);
+        max-width: 300px;
+        text-align: center;
+    }

@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <h1 style="text-align: center">This is my Weather Application</h1>
+<form method="post">
+        {% csrf_token %}
+        
+        <p clas="text-4xl font-bold text-center text-blue-600">Enter City Name</p>
+        <input type = "text" name = "city"></input><br></br>
+        <button type="submit" class="bg-green-600 text-white font-medium px-5 py-2 rounded-md hover:bg-blue-700 active:bg-blue-800 transition duration-300">Enter City</button>
+       <!---- <i class="fa-solid fa-cloud icon"></i><br></br> --->
+        {% if city %}
+         <p>You entered: <strong>{{ city }}</strong></p>
+         <p>{{weather.city}}</p>
+          <p>{{weather.country}}</p>
+           <p>{{weather.temperature}}</p>
+            <p>{{weather.condition}}</p>
+        {% endif %}
+        
+    </form>
+    </body>
+    </html>
